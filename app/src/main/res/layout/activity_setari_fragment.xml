@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent"
+			  xmlns:app="http://schemas.android.com/apk/res-auto"
+			  android:orientation="vertical">
+<LinearLayout
+        android:id="@+id/layoutTabs"
+        android:layout_width="fill_parent"        
+        android:layout_height="50dp" 
+        android:orientation="horizontal"
+        android:visibility="visible">
+    <Button android:id="@+id/btnLocuinte"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/Locuinte"
+            android:textSize="@dimen/tabs_text_size"
+            android:background="@drawable/tab_selection_material_design"
+        />
+    <Button android:id="@+id/btnCamere"
+        android:layout_width="0dp"
+        android:layout_weight="1"        
+        android:layout_height="wrap_content"        
+        android:background="@drawable/tab_selection_material_design"
+        android:textSize="@dimen/tabs_text_size"
+        android:text="@string/Camere"
+        />
+
+</LinearLayout>
+    <LinearLayout android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/layoutLocuinte"
+                android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+			<FrameLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+			<ListView
+				android:id="@+id/listLocuinte"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:text="@string/hello_world"
+				/>
+
+            <android.support.design.widget.FloatingActionButton
+				android:id="@+id/btnAddLocuinta"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="end|bottom"
+				android:layout_margin="16dp"
+				android:src="@drawable/outline_add_white_48"
+				app:backgroundTint="@color/colorPrimary"/>
+			</FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+     <LinearLayout
+        android:id="@+id/layoutCamere"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+		    <!--<LinearLayout-->
+		        <!--android:id="@+id/group"-->
+		        <!--android:layout_width="match_parent"-->
+		        <!--android:layout_height="wrap_content" -->
+		        <!--android:orientation="horizontal">-->
+		                <!---->
+				<!--<EditText android:id="@+id/txtNumeCamera"		     -->
+		        	 <!--android:layout_weight="1"-->
+		        <!--android:layout_width="0dp"-->
+		        <!--android:layout_height="wrap_content"  -->
+		        <!--android:textSize="20sp"      -->
+		        <!--android:hint="@string/Camera" />      	 		    -->
+				<!---->
+		        <!--<ImageButton-->
+		            <!--android:id="@+id/add"-->
+		            <!--android:layout_width="50dp"            -->
+		            <!--android:layout_height="50dp"-->
+        			<!--android:scaleType="fitCenter"-->
+        			<!--android:padding="10dp"-->
+        			        			<!---->
+		            <!--android:background="@android:color/transparent"-->
+		            <!--android:contentDescription="Add"-->
+		            <!--android:src="@drawable/add"/>      -->
+		        <!---->
+		    <!--</LinearLayout>-->
+
+		 <FrameLayout
+			 android:layout_width="match_parent"
+			 android:layout_height="match_parent">
+		    <ListView
+		        android:id="@+id/listSetari"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:text="@string/hello_world" />
+
+		 <android.support.design.widget.FloatingActionButton
+			 android:id="@+id/btnAddCamera"
+			 android:layout_width="wrap_content"
+			 android:layout_height="wrap_content"
+			 android:layout_gravity="end|bottom"
+			 android:layout_margin="16dp"
+			 android:src="@drawable/outline_add_white_48"
+			 app:backgroundTint="@color/colorPrimary"/>
+		 </FrameLayout>
+	</LinearLayout>
+	
+
+</LinearLayout> 

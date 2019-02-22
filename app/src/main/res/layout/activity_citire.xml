@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:background="@color/colorSpacer"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:background="@color/white"
+        android:paddingTop="15dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/lblDataSetata"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="09-feb-2019"
+                android:textColor="@color/black"
+                android:textSize="@dimen/general_text_size"
+                android:textStyle="normal"/>
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btnModificaData"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:contentDescription="Edit"
+            android:padding="0dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/baseline_date_range_black_48"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/spacer_size"
+        android:orientation="horizontal"
+        android:background="@color/colorSpacer"></LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+   <ListView
+       android:id="@+id/listCitire"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:text="@string/hello_world"
+       android:background="@color/white"
+       />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/btnLanterna"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="90dp"
+            android:src="@drawable/baseline_highlight_white_48"
+            app:backgroundTint="@color/colorPrimary"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnSaveCitire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:src="@drawable/outline_save_white_48"
+        app:backgroundTint="@color/colorPrimary"/>
+
+    </FrameLayout>
+
+   <!--<Button -->
+       <!--android:id="@+id/btnSaveCitire"-->
+       <!--android:layout_width="fill_parent"-->
+       <!--android:layout_height="wrap_content"-->
+       <!--android:layout_marginBottom="10dp"-->
+       <!--android:layout_marginLeft="10dp"-->
+       <!--android:layout_marginRight="10dp"-->
+       <!--android:text="@string/Salvare"-->
+       <!--android:background="@drawable/btn_selection_general_material_design"/>-->
+
+</LinearLayout>

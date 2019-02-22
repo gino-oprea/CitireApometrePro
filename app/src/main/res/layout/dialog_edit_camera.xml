@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp">
+    <EditText android:id="@+id/txtEditCamera"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+              android:layout_gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+            <!--<Button-->
+                    <!--android:id="@+id/btnSaveEditCamera"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="30dp"-->
+                    <!--android:layout_marginBottom="10dp"-->
+                    <!--android:background="@drawable/btn_selection_general_material_design"-->
+                    <!--android:text="@string/Salvare"-->
+                    <!--android:layout_gravity="center"/>-->
+            <!--<Button-->
+                <!--android:id="@+id/btnDeleteCamera"-->
+                <!--android:layout_width="100dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/btn_selection_general_material_design"-->
+                <!--android:text="@string/Sterge"-->
+                <!--/>-->
+
+        <ImageButton android:id="@+id/btnSaveEditCamera"
+                     android:layout_width="50dp"
+                     android:layout_height="50dp"
+                     android:scaleType="fitCenter"
+                     android:padding="10dp"
+                     android:background="@drawable/btn_round"
+                     android:src="@drawable/baseline_check_white_48"
+                     android:layout_gravity="center"/>
+
+        <View android:id="@+id/spacer_buttons_camera"
+            android:layout_width="50dp"
+            android:layout_height="1dp"></View>
+
+        <ImageButton android:id="@+id/btnDeleteCamera"
+                     android:layout_width="50dp"
+                     android:layout_height="50dp"
+                     android:scaleType="fitCenter"
+                     android:padding="10dp"
+                     android:background="@drawable/btn_round"
+                     android:src="@drawable/baseline_delete_white_48"
+                     android:layout_gravity="center"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/menuBackup"  
+        android:showAsAction="never"
+        android:title="@string/Backup"/>
+    <item
+        android:id="@+id/menuRestore"  
+        android:showAsAction="never"
+        android:title="@string/Restore"/>
+    <item
+        android:id="@+id/menuLimba"  
+        android:showAsAction="never"
+        android:title="@string/Limba"/>  
+<item
+        android:id="@+id/menuAbout"  
+        android:showAsAction="never"
+        android:title="@string/Despre"/>   
+</menu>
